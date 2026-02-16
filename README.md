@@ -30,7 +30,7 @@ Pastikan sudah menginstall:
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/username/nama-repository.git
+git clone https://github.com/DionAhza/E-Library
 cd e-library
 ```
 
