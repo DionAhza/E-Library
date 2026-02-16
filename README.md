@@ -1,71 +1,89 @@
 # 📚 Sistem Informasi Perpustakaan - Laravel
 
 Aplikasi Sistem Informasi Perpustakaan berbasis Laravel.  
-Project ini dibuat sebagai media pembelajaran untuk memahami Migration, Relasi Database, CRUD, Upload Gambar, Authentication, dan Dashboard Admin.
+Project ini dibuat sebagai media pembelajaran untuk memahami:
+
+- Migration
+- Relasi Database
+- CRUD
+- Upload Gambar
+- Authentication
+- Dashboard Admin
+- Tailwind CSS
 
 ---
 
 ## 🛠️ Persyaratan Sistem
 
+Pastikan sudah menginstall:
+
 - PHP >= 8.1  
 - Composer  
 - MySQL  
 - Git  
+- Node.js & NPM (untuk Tailwind)  
 - Laragon / MAMP / XAMPP  
 
 ---
 
 ## 🚀 Cara Install Project
 
-1. Clone repository
+### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/username/nama-repository.git
 cd e-library
 ```
 
-2. Install dependency
+### 2️⃣ Install Dependency Laravel
 ```bash
 composer install
 ```
 
-3. Copy file environment
-Linux/Mac : 
+### 3️⃣ Install Dependency Frontend (Tailwind)
+```bash
+npm install
+```
+
+### 4️⃣ Copy File Environment
+Linux / Mac:
 ```bash
 cp .env.example .env
 ```
-Windows : 
+
+Windows:
 ```bash
 copy .env.example .env
 ```
 
-4. Generate app key
+### 5️⃣ Generate App Key
 ```bash
 php artisan key:generate
 ```
 
-5. Buat database baru di phpMyAdmin / MySQL dengan nama:
-```
-belajar_perpus_db
-```
-
-6. Atur database di file `.env`
+### 6️⃣ Atur Database di File `.env`
 ```
 DB_DATABASE=belajar_perpus_db
 DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-7. Jalankan migration
+### 7️⃣ Jalankan Migration
 ```bash
 php artisan migrate
 ```
 
-Jika ingin sekalian isi data awal:
+### 8️⃣ Compile Tailwind
+Untuk development:
 ```bash
-php artisan migrate --seed
+npm run dev
 ```
 
-8. Jalankan server
+Untuk production:
+```bash
+npm run build
+```
+
+### 9️⃣ Jalankan Server
 ```bash
 php artisan serve
 ```
@@ -88,11 +106,12 @@ php artisan migrate:fresh
 
 ## ❗ Jika Terjadi Error
 
-- Pastikan database sudah dibuat
-- Pastikan file `.env` sudah benar
-- Jalankan ulang `composer install`
-- Jalankan ulang `php artisan key:generate`
+- Pastikan database sudah dibuat  
+- Pastikan file `.env` sudah benar  
+- Jalankan ulang `composer install`  
+- Jalankan ulang `npm install`  
+- Jalankan ulang `php artisan key:generate`  
 
 ---
 
-✨ Selamat belajar Laravel 🚀
+✨ Selamat belajar Laravel + Tailwind 🚀
