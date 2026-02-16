@@ -29,10 +29,11 @@ composer install
 ```
 
 3. Copy file environment
+Linux/Mac : 
 ```bash
 cp .env.example .env
 ```
-(Windows bisa juga:)
+Windows : 
 ```bash
 copy .env.example .env
 ```
